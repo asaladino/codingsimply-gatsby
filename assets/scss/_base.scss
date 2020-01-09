@@ -1,0 +1,203 @@
+$nav-bar-height: 54px;
+
+
+html {
+
+  .home {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .subheader {
+      margin-top: 4rem;
+      color: #6a6a6a;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+  }
+
+  #main-menu h1 {
+    font-size: 1.5rem;
+  }
+
+  time {
+    font-style: italic;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li, div, span {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  figure {
+    margin-bottom: 2em;
+
+    figcaption {
+      display: block;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+#main-menu {
+  width: 100%;
+  z-index: 300;
+}
+
+.mobile-menu {
+  z-index: 201;
+  position: absolute;
+  width: 100%;
+}
+
+.row {
+  .slick-next:before, .slick-prev:before {
+    color: #222;
+  }
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.site-main {
+  .project-item {
+    padding: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.site-main {
+  margin-top: $nav-bar-height;
+}
+
+.post-entry {
+  margin-bottom: 2rem;
+
+  h3 {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.bm-menu {
+  background: #fff;
+}
+
+#page .top-bar, #page .mobile-menu {
+  background-color: #fff;
+
+  .menu {
+    background-color: #fff;
+
+    a svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.site-main {
+  padding: 2rem 0 0 0;
+}
+
+.loading {
+  font-size: 32px;
+  z-index: 1000;
+}
+
+#hamburger {
+  margin: 0 .5em .5em .5em;
+}
+
+////////////////////////////////////////////////
+// Projects
+////////////////////////////////////////////////
+.project-icon {
+  border: 0.6vw solid get-color('primary');
+  width: 100%;
+  margin-bottom: 5px;
+  color: $black;
+  text-align: center;
+}
+
+.project-item-details {
+  padding-top: 1em;
+
+  .label {
+    margin-right: 0.5em;
+  }
+}
+
+.project {
+  .slick-slide {
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.categories {
+  margin: 0 0 3em 0;
+
+  span.label {
+    margin: .5em;
+  }
+
+  input {
+    margin: 0;
+  }
+
+  label {
+    margin-right: 0;
+  }
+
+  button {
+    padding: 0.33333rem 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+.callout.no-border {
+  border: none;
+}
+
+.project-slide-show {
+  padding: 0;
+
+  .orbit-slide-content {
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+
+    h3 {
+      margin-top: 2rem;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////
+// Home
+//////////////////////////////////////////////////////
+.row.slideshow-wrapper {
+  max-width: none;
+}
+
+.shadow-offset {
+  margin-top: $nav-bar-height;
+  padding-left: 40px;
+  padding-right: 40px;
+}

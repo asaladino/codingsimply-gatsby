@@ -3,8 +3,12 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
-    "strict": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ],
+    "strict": false,
     "noEmit": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -14,5 +18,7 @@
     "removeComments": false,
     "preserveConstEnums": true
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "./src/**/*"
+  ]
 }
