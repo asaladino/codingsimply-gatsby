@@ -1,15 +1,13 @@
-import React from 'react';
-import moment from 'moment';
+import React from 'react'
+import moment from 'moment'
 
 interface Props {
-    time: string;
+  time: string
 }
 
 const DateTime = (props: Props) => {
-    const { time } = props;
-    return <React.Fragment>
-        {time ? <time>{moment(time).format('dddd, MMMM Do YYYY')}</time> : null}
-    </React.Fragment>
+  const { time } = props
+  return <>{time ? <time>{moment(time).format('dddd, MMMM Do YYYY')}</time> : null}</>
 }
 
-export default DateTime;
+export default DateTime

@@ -1,18 +1,20 @@
-import React from "react";
+import React from 'react'
 
 interface Props {
-    categories: string[];
+  categories: string[]
 }
 
 const Categories = (props: Props) => {
-    const { categories } = props;
-    return <React.Fragment>
-        {categories.map(c => (
-            <span key={c} className="label secondary">
-                {c}
-            </span>
-        ))}
-    </React.Fragment>;
-};
+  const { categories } = props
+  return (
+    <>
+      {categories.map(c => (
+        <span key={c} className="label secondary">
+          {c}
+        </span>
+      ))}
+    </>
+  )
+}
 
-export default Categories;
+export default Categories

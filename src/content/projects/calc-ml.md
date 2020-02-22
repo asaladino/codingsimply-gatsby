@@ -3,14 +3,12 @@ layout: project
 title: 'Calc ML'
 author: 'Adam'
 created: '2019-05-09 19:55:31'
-tags: ["python","tensorflow"]
+tags: ['python', 'tensorflow']
 slug: 'calc-ml'
 git_url: 'https://github.com/asaladino/calc-ml'
-icon_url: 'undefined'
 readme_md: 'https://raw.githubusercontent.com/asaladino/calc-ml/master/README.md'
 screenshots: []
 ---
-
 
 I am studying neural networks and was wondering if arithmetic be learned. Apparently it can. I tried a few different methods with varying results.
 

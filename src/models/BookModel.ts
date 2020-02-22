@@ -1,11 +1,12 @@
 export default class BookModel {
-    title: string;
-    cover: string;
+  public title: string
 
-    static fromGraph(e: any) {
-        const book = new BookModel();
-        book.title = e.node.frontmatter.title;
-        book.cover = e.node.frontmatter.cover;
-        return book;
-    }
+  public cover: string
+
+  public static fromGraph(e: any) {
+    const book = new BookModel()
+    book.title = e.node.frontmatter.title
+    book.cover = e.node.frontmatter.cover
+    return book
+  }
 }

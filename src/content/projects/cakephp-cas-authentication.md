@@ -3,7 +3,7 @@ layout: project
 title: 'CakePHP CAS Authentication'
 author: 'Adam'
 created: '2019-03-09 22:32:29'
-tags: ["cakephp","php"]
+tags: ['cakephp', 'php']
 slug: 'cakephp-cas-authentication'
 git_url: 'http://github.com/asaladino/cakephp_cas_authentication'
 icon_url: 'undefined'
@@ -11,16 +11,15 @@ readme_md: ''
 screenshots: []
 ---
 
-
 Provides CAS authentication component for CakePHP applications.
 
 ### Requirements
 
 The master branch has the following requirements:
 
-*  CakePHP 2.2.0 or greater.
-*  PHP 5.4.0 or greater.
-*  Jasig phpCAS 1.3.0 or greater.
+- CakePHP 2.2.0 or greater.
+- PHP 5.4.0 or greater.
+- Jasig phpCAS 1.3.0 or greater.
 
 ### Installation
 
@@ -28,11 +27,11 @@ The master branch has the following requirements:
 
 Add the plugin to your project's composer.json:
 
-```
+```json
 {
-    "require": {
-        "asaladino/cas_authentication": "1.0.*"
-    }
+  "require": {
+    "asaladino/cas_authentication": "1.0.*"
+  }
 }
 ```
 
@@ -49,19 +48,19 @@ Because this plugin has the type cakephp-plugin set in it's own composer.json, c
 
 Add CakePlugin::loadAll(); to bootstrap.php then implement it in the controller.
 
-```
+```php
 class UsersController extends AppController {
-	public $components = [
-		'Auth' => [
-			'authenticate' => [
-				'CasAuthentication.Cas' => [
-					'hostname' => 'cas.server.com',
-					'uri' => '/cas/',
-					'debug' => LOGS . 'log-file.log',
-					'disbled' => false
-				]
-			]
-		]
-	];
+  public $components = [
+    'Auth' => [
+      'authenticate' => [
+        'CasAuthentication.Cas' => [
+         'hostname' => 'cas.server.com',
+         'uri' => '/cas/',
+         'debug' => LOGS . 'log-file.log',
+         'disbled' => false
+        ]
+      ]
+    ]
+  ];
 }
 ```

@@ -6,9 +6,7 @@ import FractureTitle from '../components/FractureTitle'
 const NotFoundPage = () => (
   <DefaultLayout>
     <h2>
-      <FractureTitle animated={["bounceInDown", "bounceInLeft", "bounceInRight", "bounceInRight"]}>
-        Bummer, nothing found.
-      </FractureTitle>
+      <FractureTitle animated={['bounceInDown', 'bounceInLeft', 'bounceInRight', 'bounceInRight']}>Bummer, nothing found.</FractureTitle>
     </h2>
   </DefaultLayout>
 )

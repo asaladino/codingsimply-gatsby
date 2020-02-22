@@ -1,5 +1,6 @@
 .idea/
 src/content/images/
+static/images-old/
 
 # =========================
 # Node.js-Specific Ignores

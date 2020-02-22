@@ -3,7 +3,7 @@ layout: project
 title: 'CakePHP Oracle Datasource'
 author: 'Adam'
 created: '2019-03-09 22:36:31'
-tags: ["cakephp","php"]
+tags: ['cakephp', 'php']
 slug: 'cakephp-oracle-datasource'
 git_url: 'http://github.com/asaladino/cakephp_oracle_datasource'
 icon_url: 'undefined'
@@ -11,15 +11,14 @@ readme_md: ''
 screenshots: []
 ---
 
-
-Connect CakePHP to an Oracle database using the OCI* PHP extension.
+Connect CakePHP to an Oracle database using the OCI\* PHP extension.
 
 ### Requirements
 
 The master branch has the following requirements:
 
-*  CakePHP 2.2.0 or greater.
-*  PHP 5.4.0 or greater.
+- CakePHP 2.2.0 or greater.
+- PHP 5.4.0 or greater.
 
 ### Installation
 
@@ -27,7 +26,7 @@ Install using [Composer.](http://getcomposer.org)
 
 Add the plugin to your project's composer.json:
 
-```
+```json
 {
   "require": {
     "asaladino/oracle_datasource": "0.8.*"
@@ -50,7 +49,7 @@ Add CakePlugin::loadAll(); to bootstrap.php then implement in database.php and a
 
 ### database.php
 
-```
+```php
 class DATABASE_CONFIG {
     public $oracle = array(
         'datasource' => 'OracleDatasource.Oci',
@@ -68,7 +67,7 @@ class DATABASE_CONFIG {
 
 ### Your Model
 
-```
+```php
 App::uses('AppModel', 'Model');
 
 class DemoState extends AppModel {
