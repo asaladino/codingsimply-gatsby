@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 
 import DefaultLayout from '../components/DefaultLayout'
-import BookModel from '../models/BookModel';
+import BookModel from '../models/BookModel'
 
 interface BookTemplateProps {
   data: {
@@ -27,7 +27,7 @@ interface BookTemplateProps {
 }
 
 const BookTemplate: React.SFC<BookTemplateProps> = ({ data }) => {
-  const book = BookModel.fromGraph({ node: data.markdownRemark });
+  const book = BookModel.fromGraph({ node: data.markdownRemark })
 
   const galleryImage = (image: any) => {
     if (image) {
@@ -35,9 +35,9 @@ const BookTemplate: React.SFC<BookTemplateProps> = ({ data }) => {
         <div>
           <img alt={image.alt} src={image.url} />
         </div>
-      );
+      )
     }
-  };
+  }
 
   const settings = {
     dots: true,
@@ -48,17 +48,16 @@ const BookTemplate: React.SFC<BookTemplateProps> = ({ data }) => {
     adaptiveHeight: false,
     autoplay: false,
     pauseOnFocus: true
-  };
+  }
 
-  return <DefaultLayout>
-    <div className="row animated fadeIn">
-      <div className="large-3 medium-4 small-6 columns">
-        {book.getTitle()}
+  return (
+    <DefaultLayout>
+      <div className="row animated fadeIn">
+        {/* <div className="large-3 medium-4 small-6 columns">{book.getTitle()}</div> */}
+        <div className="large-9 medium-8 small-6 columns" />
       </div>
-      <div className="large-9 medium-8 small-6 columns">
-      </div>
-    </div>
-  </DefaultLayout>
+    </DefaultLayout>
+  )
 }
 
 export default BookTemplate
