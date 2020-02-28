@@ -3,14 +3,17 @@ layout: project
 title: 'React Wordpress Theme'
 author: 'Adam'
 created: '2019-03-10 11:08:05'
-tags: ["javascript","nodejs","reactjs","wordpress"]
+tags: ['javascript', 'nodejs', 'reactjs', 'wordpress']
 slug: 'react-wordpress-theme'
 git_url: 'https://github.com/asaladino/codingsimply-react'
-icon_url: 'undefined'
-readme_md: ''
-screenshots: [{"title":"Coding Simply React Wordpress Theme","url":"https://codingsimply.com/wp-content/uploads/2019/03/Coding-Simply-React-Wordpress-Theme.png"}]
+screenshots:
+  [
+    {
+      'title': 'Coding Simply React Wordpress Theme',
+      'url': '/images/projects/react-wordpress-theme/Coding-Simply-React-Wordpress-Theme.png',
+    },
+  ]
 ---
-
 
 This is a study, and prototype build, to determine the benefits or drawbacks of implementing a headless Wordpress theme. The lessons learned carry over to any site that is running a single page web app.
 
@@ -18,10 +21,10 @@ This is a study, and prototype build, to determine the benefits or drawbacks of 
 
 There were a lot of benefits to this approach, but these stand out.
 
-*  Rapid building and deployment.
-*  Majority of code is in one place and one language.
-*  A lot of existing libraries and support.
-*  Quick page loads.
+- Rapid building and deployment.
+- Majority of code is in one place and one language.
+- A lot of existing libraries and support.
+- Quick page loads.
 
 ## Drawbacks
 

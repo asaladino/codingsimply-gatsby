@@ -3,7 +3,7 @@ layout: project
 title: 'Site Index'
 author: 'Adam'
 created: '2019-03-09 11:02:26'
-tags: ["javascript","nodejs"]
+tags: ['javascript', 'nodejs']
 slug: 'site-index'
 git_url: 'https://github.com/asaladino/site-index'
 icon_url: 'undefined'
@@ -11,17 +11,16 @@ readme_md: ''
 screenshots: []
 ---
 
-
 Site Index is a nodejs utility that will crawl a domain and index any reachable html urls then output to a urls.json file.
 
-```
+```bash
 
 ./site-index --help
 
 Site Index
 
-  Will crawl a site and generate the json file for all the urls found. Also     
-  converts a sitemap to a json file.                                            
+  Will crawl a site and generate the json file for all the urls found. Also
+  converts a sitemap to a json file.
 
 Options
 
