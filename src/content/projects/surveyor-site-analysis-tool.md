@@ -3,23 +3,27 @@ layout: project
 title: 'Surveyor - Site Analysis Tool'
 author: 'Adam'
 created: '2019-03-12 21:06:41'
-tags: ["javascript","nodejs","php","reactjs","scss","wordpress"]
+tags: ['javascript', 'nodejs', 'php', 'reactjs', 'scss', 'wordpress']
 slug: 'surveyor-site-analysis-tool'
-git_url: ''
-icon_url: 'undefined'
-readme_md: ''
-screenshots: [{"title":"Surveyor Domain Selection Menu","url":"https://codingsimply.com/wp-content/uploads/2019/03/Surveyor-Domain-Selection-Menu.png"},{"title":"Surveyor Domain Dashboard","url":"https://codingsimply.com/wp-content/uploads/2019/03/Surveyor-Domain-Dashboard.png"},{"title":"Surveyor Accessibility Reports and Filtering","url":"https://codingsimply.com/wp-content/uploads/2019/03/Surveyor-Accessibility-Reports-and-Filtering.png"}]
+screenshots:
+  [
+    { 'title': 'Surveyor Domain Selection Menu', 'url': '/images/projects/surveyor-site-analysis-tool/Surveyor-Domain-Selection-Menu.png' },
+    { 'title': 'Surveyor Domain Dashboard', 'url': '/images/projects/surveyor-site-analysis-tool/Surveyor-Domain-Dashboard.png' },
+    {
+      'title': 'Surveyor Accessibility Reports and Filtering',
+      'url': '/images/projects/surveyor-site-analysis-tool/Surveyor-Accessibility-Reports-and-Filtering.png',
+    },
+  ]
 ---
-
 
 The Surveyor is a combination of software packages I created to analyze any site domain and generate reports. The Surveyor begins by:
 
-*  Crawling and indexing the site.
-*  Extracts and saves all the html content.
-*  Checks every link to determine if it is broken.
-*  Performs an accessibility scan on every page indexed.
-*  Generates google lighthouse reports on every page indexed.
-*  Generates reports viewable from a reactjs web interface.
+- Crawling and indexing the site.
+- Extracts and saves all the html content.
+- Checks every link to determine if it is broken.
+- Performs an accessibility scan on every page indexed.
+- Generates google lighthouse reports on every page indexed.
+- Generates reports viewable from a reactjs web interface.
 
 There are three different parts that make up the surveyor:
 

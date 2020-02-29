@@ -8,10 +8,9 @@ Code blocks are a nice addition to documentation but they don&#8217;t have to be
 '
 ---
 
-
 Code blocks are a nice addition to documentation but they don&#8217;t have to be complex. We can create a simple reusable code block in react.
 
-![](../images/2019/07/code-block-1024x732.png)
+![](../images/code-block.png)
 
 <figure><figcaption>React Code component copying a selector.</figcaption></figure>
 
@@ -35,4 +34,5 @@ yarn add react-copy-to-clipboard
 ```
 
 Let&#8217;s add a little style to our code blocks and finally implement our component for reuse.
+
 <script></script>
