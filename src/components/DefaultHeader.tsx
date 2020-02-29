@@ -7,13 +7,13 @@ const DefaultHeader = () => {
   const [openMenu, setOpenMenu] = useState(false)
   const menus = new MenuModel({
     items: [
-      { ID: 142, menu_order: 0, title: 'Home', url: '/' },
-      { ID: 228, menu_order: 1, title: 'Profile', url: '/page-profile' },
-      { ID: 13, menu_order: 2, title: 'Blog', url: '/blog' },
-      { ID: 155, menu_order: 3, title: 'Portfolio', url: '/projects' },
-      { ID: 520, menu_order: 5, title: 'Books', url: '/books' },
-      { ID: 376, menu_order: 6, title: 'Github', url: 'https://github.com/asaladino' },
-      { ID: 524, menu_order: 7, title: 'Stack Overflow', url: 'https://stackoverflow.com/cv/adam.saladaino' }
+      { ID: 142, title: 'Home', url: '/' },
+      { ID: 228, title: 'Profile', url: '/page-profile' },
+      { ID: 13, title: 'Blog', url: '/blog' },
+      { ID: 155, title: 'Portfolio', url: '/projects' },
+      { ID: 520, title: 'Books', url: '/books' },
+      { ID: 376, title: 'Github', url: 'https://github.com/asaladino' },
+      { ID: 524, title: 'Stack Overflow', url: 'https://stackoverflow.com/cv/adam.saladino' }
     ]
   })
 
@@ -43,7 +43,13 @@ const DefaultHeader = () => {
         <div className="top-bar-left">
           <ul className="menu expanded">
             <li className="hide-for-large">
-              <button id="hamburger" data-toggle="offCanvas" onClick={onToggleMenu} className={`button ${openMenu ? '' : 'hollow'}`}>
+              <button
+                type="button"
+                id="hamburger"
+                data-toggle="offCanvas"
+                onClick={onToggleMenu}
+                className={`button ${openMenu ? '' : 'hollow'}`}
+              >
                 <span className="show-for-sr">Menu</span>
                 <FontAwesomeIcon icon="bars" />
               </button>
