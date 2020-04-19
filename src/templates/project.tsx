@@ -1,14 +1,13 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 
+import Slider from 'react-slick/lib'
+import Highlight from 'react-highlight'
 import DefaultLayout from '../components/DefaultLayout'
 import ProjectModel from '../models/ProjectModel'
 import ProjectIcon from '../components/ProjectIcon'
 import FractureTitle from '../components/FractureTitle'
 import Categories from '../components/Categories'
-
-import Slider from "react-slick/lib";
-import Highlight from "react-highlight";
 
 interface ProjectTemplateProps {
   data: {
@@ -33,7 +32,7 @@ interface ProjectTemplateProps {
 }
 
 const ProjectTemplate: React.SFC<ProjectTemplateProps> = ({ data }) => {
-  const project = ProjectModel.fromGraph({ node: data.markdownRemark });
+  const project = ProjectModel.fromGraph({ node: data.markdownRemark })
 
   const galleryImage = (image: any) => {
     if (image) {
@@ -41,9 +40,9 @@ const ProjectTemplate: React.SFC<ProjectTemplateProps> = ({ data }) => {
         <div>
           <img alt={image.alt} src={image.url} />
         </div>
-      );
+      )
     }
-  };
+  }
 
   const settings = {
     dots: true,
@@ -54,61 +53,59 @@ const ProjectTemplate: React.SFC<ProjectTemplateProps> = ({ data }) => {
     adaptiveHeight: false,
     autoplay: false,
     pauseOnFocus: true
-  };
+  }
 
-  return <DefaultLayout>
-    <div className="row animated fadeIn">
-      <div className="large-3 medium-4 small-6 columns">
-        {project.hasIcon() ? (
-          <img alt={project.getTitle()} src={project.getIconUrl()} />
-        ) : (
+  return (
+    <DefaultLayout>
+      <div className="row animated fadeIn">
+        <div className="large-3 medium-4 small-6 columns">
+          {project.hasIcon() ? (
+            <img alt={project.getTitle()} src={project.getIconUrl()} />
+          ) : (
             <ProjectIcon initials={project.getInitials()} />
           )}
-      </div>
-      <div className="large-9 medium-8 small-6 columns">
-        <h2 className="entry-title">
-          <FractureTitle split={"word"}>{project.getTitle()}</FractureTitle>
-        </h2>
-        <div className="text-right" style={{ clear: "both" }}>
-          {project.getGitUrl() ? (
-            <a
-              className="button secondary"
-              href={project.getGitUrl()}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="fa fa-github" aria-hidden="true">
-                {" "}
-              </i>
-              Fork on Github</a>
-          ) : (
-              ""
+        </div>
+        <div className="large-9 medium-8 small-6 columns">
+          <h2 className="entry-title">
+            <FractureTitle split="word">{project.getTitle()}</FractureTitle>
+          </h2>
+          <div className="text-right" style={{ clear: 'both' }}>
+            {project.getGitUrl() ? (
+              <a className="button secondary" href={project.getGitUrl()} rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-github" aria-hidden="true">
+                  {' '}
+                </i>
+                Fork on Github
+              </a>
+            ) : (
+              ''
             )}
-        </div>
-        <div className="project-item-details">
-          <Categories categories={project.categories} />
-        </div>
-      </div>
-    </div>
-    <div className="entry-content">
-      <div className="row">
-        <div className="large-12 columns content">
-          <Highlight innerHTML={true}>{project.getContent()}</Highlight>
+          </div>
+          <div className="project-item-details">
+            <Categories categories={project.categories} />
+          </div>
         </div>
       </div>
-      <div className="row">
-        <div className="small-10 small-push-1 columns" style={{ maxHeight: "900px" }}>
-          <Slider {...settings}>
-            {galleryImage(project.getScreenshot())}
-            {galleryImage(project.getScreenshot2())}
-            {galleryImage(project.getScreenshot3())}
-            {galleryImage(project.getScreenshot4())}
-            {galleryImage(project.getScreenshot5())}
-          </Slider>
+      <div className="entry-content">
+        <div className="row">
+          <div className="large-12 columns content">
+            <Highlight innerHTML>{project.getContent()}</Highlight>
+          </div>
+        </div>
+        <div className="row">
+          <div className="small-10 small-push-1 columns" style={{ maxHeight: '900px' }}>
+            <Slider {...settings}>
+              {galleryImage(project.getScreenshot())}
+              {galleryImage(project.getScreenshot2())}
+              {galleryImage(project.getScreenshot3())}
+              {galleryImage(project.getScreenshot4())}
+              {galleryImage(project.getScreenshot5())}
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
-  </DefaultLayout>
+    </DefaultLayout>
+  )
 }
 
 export default ProjectTemplate
