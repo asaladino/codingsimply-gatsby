@@ -1,8 +1,6 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
-    title: 'codingsimply-gatsby',
+    title: 'Coding Simply',
     description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
     keywords: 'gatsbyjs, gatsby, javascript',
     siteUrl: 'https://codingsimply.com',
