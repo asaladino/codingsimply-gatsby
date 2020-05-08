@@ -17,8 +17,7 @@ const PageTwo = () => (
         <img alt="Adam Saladino with a beard!" src="/images/pages/profile-2.jpg" />
       </p>
       <p>
-        I am Product Developer at <a href="https://teaching.com">teaching.com</a> and all together I have been writing software for about 20
-        years. Check out my{' '}
+        All together I have been writing software for about 20 years. Check out my{' '}
         <a rel="noreferrer noopener" aria-label="github profile (opens in a new tab)" href="https://github.com/asaladino" target="_blank">
           github profile
         </a>
