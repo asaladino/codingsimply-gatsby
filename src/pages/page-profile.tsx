@@ -20,7 +20,7 @@ const PageTwo = () => (
         All together I have been writing software for about 20 years. Check out my{' '}
         <a rel="noreferrer noopener" aria-label="github profile (opens in a new tab)" href="https://github.com/asaladino" target="_blank">
           github profile
-        </a>
+        </a>{' '}
         and <a href="/projects/">portfolio</a> to see what else I’ve be working on.
       </p>
       <p>
