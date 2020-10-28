@@ -63,13 +63,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
   allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { slug, layout } = node.fields
-    createPage({
-      path: slug,
-      component: path.resolve(`./src/templates/${layout || 'page'}.tsx`),
-      context: {
-        // Data passed to context is available in page queries as GraphQL variables.
-        slug
-      }
-    })
+    if (layout !== '') {
+      createPage({
+        path: slug,
+        component: path.resolve(`./src/templates/${layout}.tsx`),
+        context: {
+          // Data passed to context is available in page queries as GraphQL variables.
+          slug
+        }
+      })
+    }
   })
 }
