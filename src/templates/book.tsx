@@ -26,7 +26,7 @@ interface BookTemplateProps {
   }
 }
 
-const BookTemplate: React.SFC<BookTemplateProps> = ({ data }) => {
+const BookTemplate: React.FC<BookTemplateProps> = ({ data }) => {
   const book = BookModel.fromGraph({ node: data.markdownRemark })
 
   const galleryImage = (image: any) => {
