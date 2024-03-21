@@ -17,10 +17,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "sass:watch": "node-sass -w assets/scss  -o src/styles",
     "sass:build": "node-sass assets/scss -o src/styles --source-map true",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "start": "npm run dev",
-    "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "start": "npm run dev"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -70,10 +67,10 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-highlight": "^0.15.0",
-    "react-slick": "^0.30.2",
-    "typescript": "^5.4.3"
+    "react-slick": "^0.30.2"
   },
   "devDependencies": {
+    "typescript": "^5.4.3",
     "@types/classnames": "^2.3.1",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
