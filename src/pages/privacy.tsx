@@ -9,7 +9,7 @@ const PageTwo = () => (
       <FractureTitle split="word">Privacy Policy</FractureTitle>
     </h2>
     <div className="content" style={{ clear: 'both' }}>
-      <p>Coding Simply does NOT collect any user data or distribute user data. Done.</p>
+      <p>Coding Simply does NOT collect any user data or distribute user data to anyone. Done.</p>
     </div>
   </DefaultLayout>
 )
